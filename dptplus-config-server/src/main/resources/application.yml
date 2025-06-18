@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: dptplus-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/douglaspt/dptplus-config-server-repo
+          search-paths:
+            - customer
+            - message
+          default-label: main
+
+server:
+  port: 8888
+
